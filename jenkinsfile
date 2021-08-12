@@ -8,15 +8,15 @@ pipeline{
      
                     steps{
                         echo "Creating Image"
-                        sh 'docker build . -t admin/jenkins:latest'
+                        sh 'docker build . -t tarikkarakullukcu/jenkins:latest'
                     }
             }
              stage('Docker Push'){
      
                     steps{
                         echo "Pushing To DockerHub"
-                        sh 'docker login -u admin -p ${PASSWORD}'
-                        sh 'docker push admin/jenkins:latest'
+                        sh 'docker login -u tarikkarakullukcu -p ${PASSWORD}'
+                        sh 'docker push tarikkarakullukcutarikkarakullukcutarikkarakullukcutarikkarakullukcutarikkarakullukcutarikkarakullukcutarikkarakullukcu/jenkins:latest'
                     }
             }
     }
