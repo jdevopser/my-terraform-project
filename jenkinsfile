@@ -16,7 +16,7 @@ pipeline{
                     steps{
                         echo "Pushing To DockerHub"
                         sh 'docker login -u tarikkarakullukcu -p ${PASSWORD}'
-                        sh 'docker push tarikkarakullukcutarikkarakullukcutarikkarakullukcutarikkarakullukcutarikkarakullukcutarikkarakullukcutarikkarakullukcu/jenkins:latest'
+                        sh 'docker push tarikkarakullukcu/jenkins:latest'
                     }
             }
     }
